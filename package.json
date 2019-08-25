@@ -1,0 +1,53 @@
+{
+  "name": "ronin-starter",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "index.js",
+  "repository": "https://github.com/Squishy123/ronin-starter.git",
+  "author": "squishy123 <christian.gnaw@gmail.com>",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.0.15",
+    "aws-sdk": "^2.514.0",
+    "body-parser": "^1.19.0",
+    "camelcase-keys": "^6.0.1",
+    "chokidar": "^3.0.2",
+    "cors": "^2.8.5",
+    "custom-env": "^1.0.2",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.1",
+    "mongoose": "^5.6.9",
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.4.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "camelcase": "^5.3.1",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.0",
+    "inquirer": "^6.5.0",
+    "nodemon": "^1.19.1",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/server/server.js",
+    "format": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "test": "jest"
+  },
+  "nodemonConfig": {
+    "verbose": false,
+    "ignore": [
+      "tests/*"
+    ]
+  },
+  "jest": {
+    "transform": {}
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "models": [],
+  "migrations": {
+    "order": [],
+    "up": [],
+    "down": []
+  },
+  "modules": [
+    {
+      "name": "routeLoader",
+      "path": "src/server/modules/routeLoader.js",
+      "createdAt": "2019-08-13T18:28:52.503Z"
+    },
+    {
+      "name": "connectMongo",
+      "path": "src/server/modules/connectMongo.js",
+      "createdAt": "2019-08-20T17:10:51.298Z"
+    },
+    {
+      "name": "initEmailTransporter",
+      "path": "src/server/modules/initEmailTransporter.js",
+      "createdAt": "2019-08-20T17:12:11.579Z"
+    },
+    {
+      "name": "getJwks",
+      "path": "src/server/modules/getJwks.js",
+      "createdAt": "2019-08-22T18:15:47.680Z"
+    }
+  ],
+  "middlewares": [
+    {
+      "name": "general/combineParsed",
+      "path": "src/app/middlewares/general/combineParsed.js",
+      "createdAt": "2019-08-16T19:52:49.992Z"
+    },
+    {
+      "name": "general/sendPayload",
+      "path": "src/app/middlewares/general/sendPayload.js",
+      "createdAt": "2019-08-16T19:53:19.853Z"
+    },
+    {
+      "name": "auth/loginUser",
+      "path": "src/app/middlewares/auth/loginUser.js",
+      "createdAt": "2019-08-21T17:49:45.193Z"
+    },
+    {
+      "name": "auth/validateUserLogin",
+      "path": "src/app/middlewares/auth/validateUserLogin.js",
+      "createdAt": "2019-08-21T18:40:19.372Z"
+    },
+    {
+      "name": "auth/verifyAccessToken",
+      "path": "src/app/middlewares/auth/verifyAccessToken.js",
+      "createdAt": "2019-08-22T17:46:19.112Z"
+    },
+    {
+      "name": "auth/validateAccessToken",
+      "path": "src/app/middlewares/auth/validateAccessToken.js",
+      "createdAt": "2019-08-22T18:33:03.056Z"
+    },
+    {
+      "name": "auth/registerUser",
+      "path": "src/app/middlewares/auth/registerUser.js",
+      "createdAt": "2019-08-22T20:09:42.449Z"
+    },
+    {
+      "name": "auth/validateUserRegistration",
+      "path": "src/app/middlewares/auth/validateUserRegistration.js",
+      "createdAt": "2019-08-22T20:09:57.273Z"
+    }
+  ],
+  "routes": [
+    {
+      "name": "helloworld",
+      "path": "src/app/routes/helloworld.js",
+      "createdAt": "2019-08-16T20:13:01.703Z"
+    },
+    {
+      "name": "users/auth/loginUser",
+      "path": "src/app/routes/users/auth/loginUser.js",
+      "createdAt": "2019-08-21T19:16:21.848Z"
+    },
+    {
+      "name": "users/auth/verifyAccessToken",
+      "path": "src/app/routes/users/auth/verifyAccessToken.js",
+      "createdAt": "2019-08-22T19:20:08.010Z"
+    },
+    {
+      "name": "users/auth/registerUser",
+      "path": "src/app/routes/users/auth/registerUser.js",
+      "createdAt": "2019-08-22T20:27:42.087Z"
+    }
+  ]
+}
