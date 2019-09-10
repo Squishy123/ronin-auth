@@ -4,6 +4,11 @@
       "name": "user",
       "path": "src/app/models/user.js",
       "createdAt": "2019-09-04T13:04:57.278Z"
+    },
+    {
+      "name": "session",
+      "path": "src/app/models/session.js",
+      "createdAt": "2019-09-10T14:53:40.660Z"
     }
   ],
   "migrations": {
@@ -45,33 +50,33 @@
       "createdAt": "2019-08-16T19:53:19.853Z"
     },
     {
-      "name": "auth/loginUser",
-      "path": "src/app/middlewares/auth/loginUser.js",
+      "name": "auth/login/loginUser",
+      "path": "src/app/middlewares/auth/login/loginUser.js",
       "createdAt": "2019-08-21T17:49:45.193Z"
     },
     {
-      "name": "auth/validateUserLogin",
-      "path": "src/app/middlewares/auth/validateUserLogin.js",
+      "name": "auth/login/validateUserLogin",
+      "path": "src/app/middlewares/auth/login/validateUserLogin.js",
       "createdAt": "2019-08-21T18:40:19.372Z"
     },
     {
-      "name": "auth/verifyAccessToken",
-      "path": "src/app/middlewares/auth/verifyAccessToken.js",
+      "name": "auth/general/verifyAccessToken",
+      "path": "src/app/middlewares/auth/general/verifyAccessToken.js",
       "createdAt": "2019-08-22T17:46:19.112Z"
     },
     {
-      "name": "auth/validateAccessToken",
-      "path": "src/app/middlewares/auth/validateAccessToken.js",
+      "name": "auth/general/validateAccessToken",
+      "path": "src/app/middlewares/auth/general/validateAccessToken.js",
       "createdAt": "2019-08-22T18:33:03.056Z"
     },
     {
-      "name": "auth/registerUser",
-      "path": "src/app/middlewares/auth/registerUser.js",
+      "name": "auth/register/registerUser",
+      "path": "src/app/middlewares/auth/register/registerUser.js",
       "createdAt": "2019-08-22T20:09:42.449Z"
     },
     {
-      "name": "auth/validateUserRegistration",
-      "path": "src/app/middlewares/auth/validateUserRegistration.js",
+      "name": "auth/register/validateUserRegistration",
+      "path": "src/app/middlewares/auth/register/validateUserRegistration.js",
       "createdAt": "2019-08-22T20:09:57.273Z"
     }
   ],
