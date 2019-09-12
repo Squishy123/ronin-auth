@@ -78,6 +78,11 @@
       "name": "auth/register/validateUserRegistration",
       "path": "src/app/middlewares/auth/register/validateUserRegistration.js",
       "createdAt": "2019-08-22T20:09:57.273Z"
+    },
+    {
+      "name": "auth/register/generateVerificationToken",
+      "path": "src/app/middlewares/auth/register/generateVerificationToken.js",
+      "createdAt": "2019-09-10T15:07:16.201Z"
     }
   ],
   "routes": [
