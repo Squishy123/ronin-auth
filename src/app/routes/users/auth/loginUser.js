@@ -1,5 +1,5 @@
-import validateUserLogin from "../../../middlewares/auth/validateUserLogin";
-import loginUser from "../../../middlewares/auth/loginUser";
+import validateUserLogin from "../../../middlewares/auth/login/validateUserLogin";
+import loginUser from "../../../middlewares/auth/login/loginUser";
 
 const LoginUser = {
   method: "POST",

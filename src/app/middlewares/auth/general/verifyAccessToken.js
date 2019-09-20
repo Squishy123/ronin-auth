@@ -16,7 +16,7 @@ async function verifyAccessToken (req, res) {
                         rej(err);
                     res(decodedToken);
                 })
-            });
+            }); 
         }
     }
 

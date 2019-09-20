@@ -9,6 +9,7 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^3.0.15",
     "aws-sdk": "^2.514.0",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "camelcase-keys": "^6.0.1",
     "chokidar": "^3.0.2",

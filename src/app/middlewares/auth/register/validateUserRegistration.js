@@ -1,4 +1,4 @@
-const User = require('../../../models/user');
+import User from '../../../models/user';
 
 /**
  * Validation of user registration
@@ -18,11 +18,11 @@ async function validateUserRegistration(req, res) {
     if (missing.length)
         return new Error(`Error: Missing required parameters: ${missing}`);
 
-    let user = await User.find({
-        email,
+    let user = await User.exists({
+        email: req.params.email,
     });
 
-    if(user)
+    if (user)
         return new Error(`Error: User with given email already registered`);
 
 }

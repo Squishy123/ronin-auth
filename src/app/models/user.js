@@ -7,6 +7,7 @@ const Schema = mongoose.Schema({
     email: String,
     password: String,
     is_verified: Boolean,
+    access_tokens: [],
     verification_token: String,
     reset_token: String,
     transfer_token: String

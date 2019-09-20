@@ -1,5 +1,5 @@
-import validateAccessToken from '../../../middlewares/auth/validateAccessToken';
-import verifyAccessToken from '../../../middlewares/auth/verifyAccessToken';
+import validateAccessToken from '../../../middlewares/auth/general/validateAccessToken';
+import verifyAccessToken from '../../../middlewares/auth/general/verifyAccessToken';
 
 const VerifyAccessToken = {
     method: "POST",

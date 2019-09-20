@@ -4,7 +4,8 @@ const AmazonCognitoIdentity = require("amazon-cognito-identity-js");
 async function loginUser(req, res) {
   let authDetails = new AmazonCognitoIdentity.AuthenticationDetails({
     Username: req.params.username || req.params.email,
-    Password: req.params.password
+    Password: 
+    req.params.password
   });
 
   let userData = {

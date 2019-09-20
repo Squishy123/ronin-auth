@@ -25,29 +25,10 @@ server.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 server.use(bodyParser.json());
 
-//load cognito auth information
-const cognitoPoolData = {
-  UserPoolId: process.env.COGNITO_USER_POOL_ID,
-  ClientId: process.env.COGNITO_CLIENT_ID
-};
-
-//init cognito userpool
-const userPool = new AmazonCognitoIdentity.CognitoUserPool(cognitoPoolData);
-
-const cognitoData = {
-  userPool: userPool,
-  poolRegion: `ca-central-1`,
-  poolData: cognitoPoolData
-};
-
 (async function() {
   try {
     //connect to mongodb
     await connectMongo();
-
-    //get jwks
-    let jwks = await getJwks(cognitoData);
-    Object.assign(cognitoData, {keys: jwks.keys});
 
     //load all routes
     let routeLoader = new RouteLoader(server, {
@@ -55,7 +36,7 @@ const cognitoData = {
       verbose: true,
       strict: true,
       binds: {
-        cognitoData
+      
       }
     });
     await routeLoader.loadDir();
