@@ -6,7 +6,7 @@ const crypto = require('crypto');
 //Defined Schema
 const Schema = mongoose.Schema({
     type: String,
-    user_id: mongoose.Schema.Types.ObjectId,
+    user: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
     token: String,
     created_at: Date,
     expire_at: Date,
@@ -22,7 +22,7 @@ Schema.statics.createVerificationToken = async function(user) {
     let token = new Token(
         {
             type: 'verification',
-            user_id: user._id,
+            user: user._id,
             created_at: date,
             token: crypto.randomBytes(16).toString('hex'),
             expire_at: new Date().setDate(date.getDate() + 7),

@@ -8,9 +8,9 @@ const Schema = mongoose.Schema({
     password: String,
     is_verified: Boolean,
     access_tokens: [],
-    verification_token: mongoose.Schema.Types.ObjectId,
-    reset_token: mongoose.Schema.Types.ObjectId,
-    transfer_token: mongoose.Schema.Types.ObjectId
+    verification_token: { type: mongoose.Schema.Types.ObjectId, ref: "Token" },
+    reset_token: { type: mongoose.Schema.Types.ObjectId, ref: "Token" },
+    transfer_token: { type: mongoose.Schema.Types.ObjectId, ref: "Token" },
 });
 
 let User = mongoose.model('User', Schema);
