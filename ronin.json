@@ -88,6 +88,16 @@
       "name": "auth/register/generateVerificationToken",
       "path": "src/app/middlewares/auth/register/generateVerificationToken.js",
       "createdAt": "2019-09-10T15:07:16.201Z"
+    },
+    {
+      "name": "auth/register/verifyVerificationToken",
+      "path": "src/app/middlewares/auth/register/verifyVerificationToken.js",
+      "createdAt": "2019-09-23T03:21:40.388Z"
+    },
+    {
+      "name": "auth/register/validateVerificationToken",
+      "path": "src/app/middlewares/auth/register/validateVerificationToken.js",
+      "createdAt": "2019-09-23T03:21:52.253Z"
     }
   ],
   "routes": [
@@ -110,6 +120,11 @@
       "name": "users/auth/registerUser",
       "path": "src/app/routes/users/auth/registerUser.js",
       "createdAt": "2019-08-22T20:27:42.087Z"
+    },
+    {
+      "name": "/users/auth/verifyVerificationToken",
+      "path": "src/app/routes//users/auth/verifyVerificationToken.js",
+      "createdAt": "2019-09-20T17:25:06.564Z"
     }
   ]
 }
